@@ -45,3 +45,14 @@ obj.callBlock {
 # }
 
 #Thus, there can only be one block per function.
+
+#New Function
+
+def newOne
+	yield 5,10
+end
+
+newOne {
+	|a,b| 
+	puts "Sum of #{a} and #{b} is : #{a+b}"
+}
